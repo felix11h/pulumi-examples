@@ -1,0 +1,21 @@
+** Pulumi examples
+
+This repository contains standalone examples and demonstrations for defining and creating resources with Pulumi.
+
+**** Dynamic resource local file provider
+
+Fully local Pulumi project to demonstrate dynamic resource providers in Python.
+
+To run locally first install the dependencies with Poetry, for example
+#+BEGIN_SRC sh
+  poetry env use python && poetry install
+#+END_SRC
+if you want to use a Poetry virtual environment.
+
+Then, in ~examples/dynamic-resource-local-file~, run
+#+BEGIN_SRC sh
+  poetry run pulumi up
+#+END_SRC
+
+and follow the instructions to create a new stack. Your new stack can be found in ~.backend~ and created files
+through the provider in the specified path, for example ~output/~.

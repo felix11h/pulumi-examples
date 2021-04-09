@@ -5,4 +5,4 @@ description: Dynamic Resource Provider Python Demonstration
 
 config: stack_configs
 backend:
-  url: file://../.backend
+  url: file://.backend
