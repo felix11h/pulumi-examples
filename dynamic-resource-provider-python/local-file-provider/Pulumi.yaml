@@ -1,0 +1,8 @@
+name: local-file-provider
+runtime:
+  name: python
+description: Dynamic Resource Provider Python Demonstration
+
+config: stack_configs
+backend:
+  url: file://../.backend
