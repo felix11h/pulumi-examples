@@ -5,6 +5,7 @@ This repository contains standalone examples and demonstrations for defining and
 **** Dynamic resource local file provider
 
 Fully local Pulumi project to demonstrate dynamic resource providers in Python.
+See also [[https://www.pulumi.com/blog/dynamic-providers/][pulumi.com/blog/dynamic-providers]].
 
 To run locally first install the dependencies with Poetry, for example
 #+BEGIN_SRC sh
