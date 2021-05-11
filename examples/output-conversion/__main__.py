@@ -1,6 +1,5 @@
 import pulumi
-
-from resources.random_output import RandomOutput, InputReader
+from resources.random_output import InputReader, RandomOutput
 
 random_output = RandomOutput("test_random")
 
@@ -15,12 +14,11 @@ i1 = InputReader(
     comment="print(random_output.property)  # from within InputReader",
 )
 
-
 # str manipulations on the Output[str] do not work in a straightforward manner
 i2 = InputReader(
     resource_name="test_input_02",
     input_str=f"modified-{random_output.property}",
-    comment="print(f\"modified-{random_output.property}\")  # from within InputReader",
+    comment='print(f"modified-{random_output.property}")  # from within InputReader',
     opts=pulumi.ResourceOptions(depends_on=[i1]),
 )
 
@@ -29,12 +27,6 @@ i2 = InputReader(
 i3 = InputReader(
     resource_name="test_input_03",
     input_str=random_output.property.apply(lambda prop: f"modified-{prop}"),
-    comment="print(random_output.property.apply(lambda prop: f\"modified-{prop}\"))  # from with InputReader",
+    comment='print(random_output.property.apply(lambda prop: f"modified-{prop}"))  # from with InputReader',
     opts=pulumi.ResourceOptions(depends_on=[i1, i2]),
 )
-
-
-
-
-
-
