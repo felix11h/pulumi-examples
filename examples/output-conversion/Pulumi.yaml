@@ -1,0 +1,8 @@
+name: output-conversion
+runtime:
+  name: python
+description: Conversion of Pulumi Outputs
+
+config: stack_configs
+backend:
+  url: file://.backend
