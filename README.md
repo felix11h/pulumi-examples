@@ -28,3 +28,5 @@ Demonstrates the concept of dynamic resource providers by defining a resource pr
 ### Output conversion
 
 Demonstrates the concept of Pulumi outputs by showing in what circumstances a Pulumi output can be converted and printed as a string. See also  [pulumi.com/docs/inputs-outputs/](https://www.pulumi.com/docs/intro/concepts/inputs-outputs/).
+
+### Config request issue

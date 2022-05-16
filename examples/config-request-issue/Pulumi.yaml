@@ -1,0 +1,8 @@
+name: config-request-issue
+runtime:
+  name: python
+description: Demonstrate config request issue
+
+config: stack_configs
+backend:
+  url: file://.backend
