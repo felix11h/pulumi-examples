@@ -1,0 +1,8 @@
+name: missing-delete-outputs
+runtime:
+  name: python
+description: Demonstrate issues with delete method when new outputs are missing
+
+config: stack_configs
+backend:
+  url: file://.backend
